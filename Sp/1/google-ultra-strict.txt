@@ -1,0 +1,317 @@
+! Title: Jnaklaas Google Ultra Strict Blocklist
+! Description: Blocks Google ads, telemetry, analytics, YouTube tracking, Recaptcha and CDN tracking.
+! Purpose: block Google tracking outside Google services
+! Version: 2026.06.26 (177 rules)
+! Last modified: 26 Jun 2026 10:32 UTC
+! Homepage: https://github.com/jnaklaas/blocklists
+! License: MIT
+
+! ============================================================
+! GOOGLE ADS / DOUBLECLICK / AD DELIVERY
+! ============================================================
+
+||doubleclick.net^
+||g.doubleclick.net^
+||googleads.g.doubleclick.net^
+||static.doubleclick.net^
+||partnerad.l.doubleclick.net^
+||googlesyndication.com^
+||pagead2.googlesyndication.com^
+||tpc.googlesyndication.com^
+||google.com/pagead^
+||google.com/ads^
+||google.com/adsense^
+||googleadservices.com^
+||adservice.google.com^
+||googleadservices.com/pagead/conversion^
+||ad.doubleclick.net^
+||ads.google.com^
+||adssettings.google.com^
+||stats.g.doubleclick.net^
+||pubads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||adservice.google.*^
+||adservice.google.be^
+||adservice.google.nl^
+||adservice.google.de^
+||adservice.google.fr^
+||adservice.google.co.uk^
+||adservice.google.ca^
+||adservice.google.com.au^
+||adservice.google.es^
+||adservice.google.it^
+
+
+! ============================================================
+! GOOGLE ANALYTICS / MARKETING / EXPERIMENTS
+! ============================================================
+
+||google-analytics.com^
+||ssl.google-analytics.com^
+||www.google-analytics.com^
+||googletagmanager.com^
+||www.googletagmanager.com^
+||googletagservices.com^
+||googleoptimize.com^
+||analytics.google.com^
+||marketingplatform.google.com^
+||googletagmanager.com/gtm.js$third-party
+||googletagmanager.com/gtag/js$third-party
+||google-analytics.com/collect^
+||google-analytics.com/r/collect^
+||google-analytics.com/g/collect^
+||region1.google-analytics.com^
+||region2.google-analytics.com^
+||region3.google-analytics.com^
+||optimize.google.com^
+||experiments.google.com^
+||clientservices.googleapis.com^
+||analytics.googleusercontent.com^
+
+
+! ============================================================
+! TELEMETRY / LOGGING / METRICS
+! ============================================================
+
+||clientmetrics.googleapis.com^
+||metrics.gstatic.com^
+||beacons.gvt2.com^
+||update.googleapis.com^
+||tools.google.com/service/update2^
+||logging.googleapis.com^
+||playlogging.googleapis.com^
+||measurement.googleapis.com^
+||play.googleapis.com/log^
+||play.googleapis.com/batchexecute^
+||android-checkin.googleapis.com^
+||android.clients.google.com/checkin^
+
+
+! ============================================================
+! GOOGLE API TELEMETRY SERVICES
+! ============================================================
+
+||jnn-pa.googleapis.com^
+||play.googleapis.com^
+||clients1.google.com^
+||clients2.google.com^
+||clients3.google.com^
+||clients4.google.com^
+||clients5.google.com^
+||clients6.google.com^
+||android.clients.google.com^
+||safebrowsing.googleapis.com^
+||sb-ssl.google.com^
+||play-fe.googleapis.com^
+||people-pa.googleapis.com^
+||photos-pa.googleapis.com^
+||android.googleapis.com^
+||variations.googleapis.com^
+||chrome.googleapis.com^
+||content-autofill.googleapis.com^
+||history.googleapis.com^
+||deviceintegrity.googleapis.com^
+
+
+! ============================================================
+! CONNECTIVITY / NETWORK CHECKS
+! ============================================================
+
+||connectivitycheck.gstatic.com^
+||connectivitycheck.gstatic.com/generate_204
+||clients3.google.com/generate_204
+||www.google.com/generate_204^
+||www.gstatic.com/generate_204^
+||clients4.google.com/generate_204^
+
+
+! ============================================================
+! CDN / STATIC LIBRARIES
+! ============================================================
+
+||ajax.googleapis.com^
+||commondatastorage.googleapis.com^
+||cdn.ampproject.org^
+||ssl.gstatic.com^$third-party
+
+
+! ============================================================
+! GOOGLE FONTS
+! ============================================================
+
+||fonts.googleapis.com^
+||fonts.gstatic.com^
+
+! Allow Google Fonts on Google domains
+@@||fonts.googleapis.com^$domain=google.com
+@@||fonts.gstatic.com^$domain=google.com
+
+
+! ============================================================
+! GOOGLE MAPS
+! ============================================================
+
+||maps.googleapis.com^
+||maps.gstatic.com^
+||maps.google.com/maps^
+
+
+! ============================================================
+! GOOGLE USER CONTENT CDN
+! ============================================================
+
+||googleusercontent.com^$third-party
+||gvt1.com^
+||gvt2.com^
+||lh3.googleusercontent.com^$third-party
+||lh4.googleusercontent.com^$third-party
+||lh5.googleusercontent.com^$third-party
+||lh6.googleusercontent.com^$third-party
+||lh7.googleusercontent.com^$third-party
+||lh8.googleusercontent.com^$third-party
+
+
+! ============================================================
+! YOUTUBE TELEMETRY
+! ============================================================
+
+||youtube.com/api/stats^
+||youtube.com/api/stats/watchtime^
+||youtube.com/api/stats/playback^
+||youtube.com/api/stats/ads^
+||youtube.com/api/stats/qoe^
+||youtube.com/youtubei/v1/log_event^
+||youtube.com/youtubei/v1/att^
+||youtube.com/ptracking^
+||youtube.com/get_video_info^
+||youtube.com/generate_204^
+||youtube.com/api/stats/engagement^
+||youtube.com/api/stats/delayplay^
+||youtube.com/api/stats/endscreen^
+||youtube.com/api/stats/annotations^
+||youtube.com/api/stats/cards^
+||youtube.com/api/stats/interaction^
+||youtube.com/api/stats/atr^
+||youtube.com/api/stats/error^
+
+
+! ============================================================
+! YOUTUBE AD INFRASTRUCTURE
+! ============================================================
+
+||youtube.com/pagead^
+||youtube.com/get_midroll_info^
+||youtube.com/ad_data^
+||youtube.com/pagead/interaction^
+||youtube.com/adsense^
+
+
+! ============================================================
+! YOUTUBE VIDEO DELIVERY / METRICS
+! ============================================================
+
+||googlevideo.com^
+||googlevideo.com/api/stats^
+||redirector.googlevideo.com^
+
+
+! ============================================================
+! YOUTUBE PROFILE / IMAGE CDNs
+! ============================================================
+
+||yt3.ggpht.com^$third-party
+||yt4.ggpht.com^$third-party
+||yt5.ggpht.com^$third-party
+||yt6.ggpht.com^$third-party
+
+
+! ============================================================
+! GOOGLE ACCOUNT / IDENTITY TRACKING
+! ============================================================
+
+||accounts.google.com/gsi/$xhr
+||play.google.com/log^
+||play.google.com/log?^
+||accounts.google.com/gsi/client$third-party
+||accounts.google.com/gsi/$third-party
+||accounts.google.com/ListAccounts^
+||accounts.google.com/_/lookup/accountlookup^
+||accounts.google.com/_/signin/sl/lookup^
+
+
+! ============================================================
+! AMP TRACKING
+! ============================================================
+
+||cdn.ampproject.org/v0/amp-analytics^
+||cdn.ampproject.org/rtv/*/v0/amp-analytics^
+||ampcid.google.com^
+||amp-error-reporting.appspot.com^
+
+
+! ============================================================
+! FIREBASE / PUSH MESSAGING
+! ============================================================
+
+||fcm.googleapis.com^
+||fcmregistrations.googleapis.com^
+||firebase.googleapis.com^
+
+
+! ============================================================
+! DEVICE FINGERPRINTING / CLIENT INSTRUMENTATION
+! ============================================================
+
+||csi.gstatic.com^
+||www.gstatic.com/csi^
+||www.gstatic.com/og/_/js^
+||ssl.gstatic.com/og/_/ss^
+||ssl.gstatic.com/og/_/rs^
+||ssl.gstatic.com/og/_/js/k^
+||ogs.google.com^
+||ogs-pa.googleapis.com^
+||play.googleapis.com/experiments^
+
+
+! ============================================================
+! RECAPTCHA
+! ============================================================
+
+||gstatic.com/recaptcha^
+||google.com/recaptcha^
+||recaptcha.net^
+||www.recaptcha.net^
+
+
+! ============================================================
+! STRICT THIRD-PARTY BLOCKING
+! ============================================================
+
+||gstatic.com^$third-party
+||google.com^$third-party
+
+
+! ============================================================
+! GOOGLE STATIC TRACKING CDN
+! ============================================================
+
+||gstaticadssl.l.google.com^
+||www-google-analytics.l.google.com^
+||www-googletagmanager.l.google.com^
+
+
+! ============================================================
+! EXCEPTIONS (ALLOW GOOGLE SERVICES ON GOOGLE SITES)
+! ============================================================
+
+@@||google.com^$domain=google.com|youtube.com
+@@||gstatic.com^$domain=google.com|youtube.com
+@@||googleapis.com^$domain=google.com|youtube.com
+
+
+! ============================================================
+! YOUTUBE EMBED PRIVACY (CLICK-TO-LOAD)
+! ============================================================
+
+||youtube.com/embed/$3p,frame,redirect=noopframe
+||youtube-nocookie.com/embed/$3p,frame,redirect=noopframe
